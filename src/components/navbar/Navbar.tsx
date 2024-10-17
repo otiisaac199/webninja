@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { logo } from "../../assets/index";
 import { navLinksdata } from "../../constants";
 
@@ -16,7 +17,16 @@ const Navbar = () => {
               className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={navLink._id}
             >
-              {navLink.title}
+              <Link
+                activeClass="active"
+                to={navLink.link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {navLink.title}
+              </Link>
             </li>
           ))}
         </ul>
