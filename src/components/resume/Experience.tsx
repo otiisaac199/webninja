@@ -1,8 +1,13 @@
 import ResumeCard from "./ResumeCard";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className="py-12 font-titleFont flex gap-20">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      className="py-12 font-titleFont flex gap-20"
+    >
       <div>
         <div className="flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
@@ -55,7 +60,7 @@ const Experience = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

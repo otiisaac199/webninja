@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Title from "../layouts/Title";
 import Achievement from "./Achievement";
 import Education from "./Education";
@@ -5,6 +6,11 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 
 const Resume = () => {
+  const [educationData, setEducationData] = useState(true);
+  const [skillData, setSkillData] = useState(false);
+  const [experienceData, setExperienceData] = useState(false);
+  const [achievementData, setAchievementData] = useState(false);
+
   return (
     <section
       id="resume"
@@ -15,16 +21,56 @@ const Resume = () => {
       </div>
       <div>
         <ul className="w-full grid grid-cols-4">
-          <li className="resumeLi">Education</li>
-          <li className="resumeLi">Professional SKill</li>
-          <li className="resumeLi">Experience</li>
-          <li className="resumeLi">Achievements</li>
+          <li
+            onClick={() => {
+              setEducationData(true) &
+                setSkillData(false) &
+                setExperienceData(false) &
+                setAchievementData(false);
+            }}
+            className="resumeLi"
+          >
+            Education
+          </li>
+          <li
+            onClick={() =>
+              setEducationData(false) &
+              setSkillData(true) &
+              setExperienceData(false) &
+              setAchievementData(false)
+            }
+            className="resumeLi"
+          >
+            Professional SKill
+          </li>
+          <li
+            onClick={() =>
+              setEducationData(false) &
+              setSkillData(false) &
+              setExperienceData(true) &
+              setAchievementData(false)
+            }
+            className="resumeLi"
+          >
+            Experience
+          </li>
+          <li
+            onClick={() =>
+              setEducationData(false) &
+              setSkillData(false) &
+              setExperienceData(false) &
+              setAchievementData(true)
+            }
+            className="resumeLi"
+          >
+            Achievements
+          </li>
         </ul>
       </div>
-      {/* <Education /> */}
-      {/* <Skills /> */}
-      {/* <Achievement /> */}
-      <Experience />
+      {educationData && <Education />}
+      {skillData && <Skills />}
+      {achievementData && <Achievement />}
+      {experienceData && <Experience />}
     </section>
   );
 };
