@@ -1,5 +1,8 @@
 import Title from "../layouts/Title";
+import Achievement from "./Achievement";
 import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
 
 const Resume = () => {
   return (
@@ -18,7 +21,10 @@ const Resume = () => {
           <li className="resumeLi">Achievements</li>
         </ul>
       </div>
-      <Education />
+      {/* <Education /> */}
+      {/* <Skills /> */}
+      {/* <Achievement /> */}
+      <Experience />
     </section>
   );
 };
