@@ -30,7 +30,7 @@ const Card = ({ item: { title, des, icon } }: CardProps) => {
             <h2 className="text-2xl font-titleFont font-bold text-gray-300">
               {title}
             </h2>
-            <p className="text-base">{des}</p>
+            <p className="text-sm">{des}</p>
             <span className="text-2xl text-designColor">
               <HiArrowRight />
             </span>
