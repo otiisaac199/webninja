@@ -8,58 +8,146 @@ const Skills = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex gap-20"
     >
-      <div>
+      <div className="w-1/2">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">FEATURES</p>
           <h2 className="text-3xl md:text-4xl font-bold">Design Skill</h2>
         </div>
-        <div className="w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
-          <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          />
+        <div className="mt-4 w-full flex flex-col gap-6">
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">CorelDraw</p>
+            <span className="pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[90%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">80%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">Photoshop</p>
+            <span className="pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[60%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">60%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">AdobeXd</p>
+            <span className="pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[50%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">50%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">Canva</p>
+            <span className="pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[70%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">70%</span>
+              </motion.span>
+            </span>
+          </div>
         </div>
       </div>
 
       {/* second part */}
-      <div>
+      <div className="w-1/2">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">FEATURES</p>
           <h2 className="text-3xl md:text-4xl font-bold">Development Skill</h2>
         </div>
-        <div className="w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
+        <div className="mt-4 w-full flex flex-col gap-6">
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">JAVASCRIPT</p>
+            <span className="w-full pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[75%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">75%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">React</p>
+            <span className="w-full pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[85%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">85%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">TailwindCSS</p>
+            <span className="w-full pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[80%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">80%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">ExpressJs</p>
+            <span className="w-full pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[65%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">65%</span>
+              </motion.span>
+            </span>
+          </div>
+
+          <div className="overflow-x-hidden">
+            <p className="text-sm uppercase font-medium">NextJs</p>
+            <span className="w-full pBar">
+              <motion.span
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="w-[75%] pBarContent"
+              >
+                <span className="absolute -top-7 right-0">75%</span>
+              </motion.span>
+            </span>
+          </div>
         </div>
       </div>
     </motion.div>
