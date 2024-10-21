@@ -9,7 +9,9 @@ const Title = ({ title, desc }: TitleProps) => {
       <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
         {title}
       </h3>
-      <h1 className="text-5xl text-gray-300 font-bold capitalize">{desc}</h1>
+      <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">
+        {desc}
+      </h1>
     </div>
   );
 };

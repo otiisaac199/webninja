@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full py-20 h-96 border-b-[1px] border-b-black grid grid-cols-4 gap-24">
+    <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-20 lg:gap-24">
       <div className="w-full h-full flex flex-col gap-4">
         <img className="w-32" src={logo} alt="logo" />
         <div className="flex gap-4">
